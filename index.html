@@ -14,6 +14,12 @@
         <img id="concrete_norm" src="textures/concrete/Concrete_NORM.jpg">
         <img id="concrete_occ" src="textures/concrete/Concrete_OCC.jpg">
         <img id="concrete_disp" src="textures/concrete/Concrete_DISP.png">
+
+        <img id="wall_color" src="textures/wall/Wall_COLOR.jpg">
+        <img id="wall_norm" src="textures/wall/Wall_NORM.jpg">
+        <img id="wall_occ" src="textures/wall/Wall_OCC.jpg">
+        <img id="wall_disp" src="textures/wall/Wall_DISP.png">
+
       </a-assets>
 
 
@@ -30,7 +36,7 @@
       <a-entity light="type: point; color: #FFF; intensity: 0.5" position="-5 2 5"></a-entity>
 
       <a-entity light="type: ambient; color: #FFF; intensity: 0.2" position="0 2.5 0"></a-entity>
-      <a-box position="-10 4 0" scale="20 8 0.4" rotation="0 90 0" color="#efefef"></a-box>
+      <a-box position="-10 4 0" scale="20 8 0.4" rotation="0 90 0" material="src: #concrete_color; repeat: 4 16; normalMap: #wall_normal; normalTextureRepeat: 4 16; ambientOcclusionMap: #wall_occ; ambientOcclusionTextureRepeat: 4 16; displacementMap: #wall_disp; roughness: 0.5"></a-box>
       <a-box position="0 4 -10" scale="20 8 0.4" rotation="0 0 0" color="#efefef"></a-box>
       <a-box position="10 4 0" scale="20 8 0.4" rotation="0 90 0" color="#efefef"></a-box>
       <a-box position="0 4 10" scale="20 8 0.4" rotation="0 0 0" color="#efefef"></a-box>
