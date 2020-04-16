@@ -9,6 +9,11 @@
   </head>
   <body>
     <a-scene>
+      <a-assets>
+        <img id="concrete_color" src="textures/concrete/Concrete_COLOR.jpg">
+      </a-assets>
+
+
       <a-entity id="rig"
                 movement-controls
                 position="0 0 0">
@@ -21,7 +26,7 @@
       <a-box position="0 2.5 -10" scale="20 5 0.4" rotation="0 0 0" color="#efefef"></a-box>
       <a-box position="10 2.5 0" scale="20 5 0.4" rotation="0 90 0" color="#efefef"></a-box>
       <a-box position="0 2.5 10" scale="20 5 0.4" rotation="0 0 0" color="#efefef"></a-box>
-      <a-plane color="#ffffff" position="0 0 0" height="20" width="20" rotation="-90 0 0" material="shader: flat; color: white"></a-plane>
+      <a-plane color="#ffffff" position="0 0 0" height="20" width="20" rotation="-90 0 0" material="src: #concrete_color"></a-plane>
       <a-plane color="#ffffff" position="0 5 0" height="20" width="20" rotation="90 0 0" material="shader: flat; color: red"></a-plane>
       <a-sky color="#3d3d3d"></a-sky>
     </a-scene>
