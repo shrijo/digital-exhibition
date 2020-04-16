@@ -74368,6 +74368,7 @@ module.exports.Component = registerComponent('wasd-controls', {
     var data = this.data;
     var keys = this.keys;
     var velocity = this.velocity;
+    var rotation = this.el.getAttribute('rotation');
     var wsAxis;
     var wsSign;
 
