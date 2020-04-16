@@ -74402,8 +74402,8 @@ module.exports.Component = registerComponent('wasd-controls', {
     acceleration = data.acceleration;
     if (data.adEnabled) {
       adSign = data.adInverted ? -1 : 1;
-      if (keys.KeyA || keys.ArrowLeft) { rotation[adAxis] -= 5 }
-      if (keys.KeyD || keys.ArrowRight) { rotation[adAxis] += 5 }
+      if (keys.KeyA || keys.ArrowLeft) { rotation.x -= 5 }
+      if (keys.KeyD || keys.ArrowRight) { rotation.x += 5 }
     }
     if (data.wsEnabled) {
       wsSign = data.wsInverted ? -1 : 1;
