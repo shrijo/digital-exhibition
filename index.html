@@ -5,7 +5,13 @@
     <title>Hello, World! - A-Frame</title>
     <meta name="description" content="ZHDK - Digital Exhibitionn">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script>
+     window.addEventListener('keydown', this.onKeydown);
 
+     onKeydown: function (evt) {
+        alert("hello");
+      },
+    </script>
   </head>
   <body>
     <a-scene vr-mode-ui="enabled: false">
