@@ -23,6 +23,9 @@
         <img id="ventman" src="projects/ventman/ventman.jpg">
         <img id="helmet" src="projects/helmet/helmet.jpg">
 
+        <a-asset-item id="rose-obj" src="rose.obj"></a-asset-item>
+        <a-asset-item id="rose-mtl" src="rose.mtl"></a-asset-item>
+
         <video id="chicken" autoplay muted loop="true" src="projects/chicken/chicken.mp4"></video>
 
       </a-assets>
@@ -45,6 +48,8 @@
       <a-image src="#ventman" height="5.325" width="9.45" position="0 4 -9.75"></a-image>
       <a-image src="#helmet" height="5.25" width="7" position="0 4 9.75 " rotation="180 0 180"></a-image>
       <a-video src="#chicken" autoplay="true" loop width="4" height="4" position="9.75 4 0" rotation="0 90 0"></a-video>
+
+      <a-obj-model src="#rose-obj" mtl="#rose-mtl"></a-obj-model>
 
       <a-sky color="#3d3d3d"></a-sky>
     </a-scene>
