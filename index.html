@@ -8,7 +8,7 @@
     <script src="https://cdn.rawgit.com/mrturck/aframe-joystick/master/joystick.min.js"></script>
   </head>
   <body>
-    <a-scene joystick vr-mode-ui="enabled: false">
+    <a-scene joystick vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: true">
       <a-assets>
         <img id="concrete_color" src="textures/concrete/Concrete_COLOR.jpg">
         <img id="concrete_norm" src="textures/concrete/Concrete_NORM.jpg">
@@ -56,5 +56,7 @@
 <style>
 #np{
   border-radius: 100%;
+  background-color: none;
+  border: 1px solid white;
 }
 </style>
