@@ -136,6 +136,7 @@ body {
 }
 
 .info-panel{
+  height: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -159,7 +160,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 1s ease;
+  transition: 200ms ease;
 }
 
 .rot45{
@@ -196,10 +197,12 @@ body {
 .description{
   color: white;
   height: 0;
-  transition: 1s ease;
+  display: none;
+  transition: 200ms ease;
 }
 
 .descriptionVisible{
+  display: block;
   height: auto;
   max-height: 400px;
   overflow-y: scroll;
