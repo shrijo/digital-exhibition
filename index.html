@@ -93,8 +93,18 @@
       <a-sky color="#3d3d3d"></a-sky>
 
       <div class="info-panel">
-        <h3 class="project-title">Project Title</h3>
-        <h4 class="student">Student</h4>
+        <div class="titlestudent">
+          <h3 class="project-title">Project Title</h3>
+          <h4 class="student">Student</h4>
+        </div>
+        <div class="moreless">
+          <div class="barhorizontal">
+            <div class="barvertical"></div>
+          </div>
+        </div>
+
+
+          </div>
         <p class="description"></p>
       </div>
 
@@ -120,6 +130,15 @@ body {
   transition: 200ms ease;
   padding: 0px 20px;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.moreless{
+  height: 50px;
+  width: 50px;
+  background-color: red;
 }
 
 .visible{
