@@ -5,6 +5,7 @@
     <title>ZHDK - Digital Exhibition</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
   </head>
   <body>
     <a-scene vr-mode-ui="enabled: false">
@@ -25,12 +26,14 @@
         <a-asset-item id="rose-obj" src="projects/models/rose/rose.obj"></a-asset-item>
         <a-asset-item id="rose-mtl" src="projects/models/rose/rose.mtl"></a-asset-item>
 
-        <video id="chicken" playsinline autoplay muted loop controls src="projects/chicken/chicken.mp4"></video>
+        <video id="chicken" playsinline autoplay muted loop src="projects/chicken/chicken.mp4"></video>
         <video id="lachs" autoplay muted loop="true" src="projects/lachs/lachs.mp4"></video>
 
       </a-assets>
 
-      <a-entity camera position="0 1.6 0" wasd-controls look-controls pointerLockEnabled="true"></a-entity>
+      <a-entity id="rig" movement-controls position="25 0 25">
+        <a-entity camera position="0 1.6 0" look-controls="pointerLockEnabled: true"></a-entity>
+      </a-entity>
 
       <a-entity light="type: point; castShadow:true; color: #FFF; intensity: 0.2" position="5 2 5"></a-entity>
       <a-entity light="type: point; castShadow:true; color: #FFF; intensity: 0.2" position="5 2 -5"></a-entity>
