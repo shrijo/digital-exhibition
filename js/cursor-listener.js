@@ -7,12 +7,13 @@ AFRAME.registerComponent('cursor-listener', {
     var projectTitle = document.querySelector(".project-title");
 
     this.el.addEventListener('mouseenter', function (evt) {
-      lastIndex = (lastIndex + 1) % COLORS.length;
-      this.setAttribute('material', 'color', COLORS[lastIndex]);
-      console.log('I was clicked at: ', evt.detail.intersection.point);
       infoPanel.classList.add("visible")
       projectTitle.innerHTML = "box";
       student.innerHTML = "karate karl";
+    });
+
+    this.el.addEventListener('mouseleave', function (evt) {
+      infoPanel.classList.remove("visible")
     });
   }
 });
