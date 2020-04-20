@@ -22,5 +22,3 @@ AFRAME.registerComponent('cursor-listener', {
     });
   }
 });
-
-element.classList.contains(class);
