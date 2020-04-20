@@ -2,8 +2,9 @@ AFRAME.registerComponent('cursor-listener', {
   init: function () {
     var lastIndex = -1;
     var COLORS = ['red', 'green', 'blue'];
-    var student = document.getElementsByClassName("student");
-    var projectTitle = document.getElementsByClassName("project-title");
+    var student = document.querySelector(".student");
+    var projectTitle = document.querySelector(".project-title");
+
     this.el.addEventListener('click', function (evt) {
       lastIndex = (lastIndex + 1) % COLORS.length;
       this.setAttribute('material', 'color', COLORS[lastIndex]);
