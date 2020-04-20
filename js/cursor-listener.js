@@ -1,5 +1,5 @@
 AFRAME.registerComponent('cursor-listener', {
-  schema: {student: 'karate karl'}
+  schema: {student: 'karate karl'};
   init: function () {
     var lastIndex = -1;
     var
