@@ -11,7 +11,9 @@ AFRAME.registerComponent('cursor-listener', {
       studentElement.innerHTML = this.dataset.studentString;
       descriptionElement.innerHTML = this.dataset.descriptionString;
 
-      this.play();
+      if(this.classList.contains("video")) {
+          alert("It's a video!");
+      };
 
     });
 
