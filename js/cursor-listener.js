@@ -3,13 +3,13 @@ AFRAME.registerComponent('cursor-listener', {
     var lastIndex = -1;
     var COLORS = ['red', 'green', 'blue'];
     var infoPanel = document.querySelector(".info-panel");
-    var student = document.querySelector(".student");
-    var projectTitle = document.querySelector(".project-title");
+    var studentElement = document.querySelector(".student");
+    var projectTitleElement = document.querySelector(".project-title");
 
     this.el.addEventListener('mouseenter', function (evt) {
       infoPanel.classList.add("visible")
-      projectTitle.innerHTML = this.el.dataset.projectTitle;
-      student.innerHTML = this.el.dataset.student;
+      projectTitleElement.innerHTML = this.el.dataset.projectTitle;
+      studentElement.innerHTML = this.el.dataset.student;
     });
 
     this.el.addEventListener('mouseleave', function (evt) {
