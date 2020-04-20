@@ -62,6 +62,10 @@
 
       <a-sky color="#3d3d3d"></a-sky>
     </a-scene>
+    <div class="info-panel">
+      <h3 class="project-title">Project Title</h3>
+      <h4 class="student">Student</h4>
+    </div>
   </body>
 </html>
 
@@ -71,8 +75,21 @@ body {
   -webkit-user-select: none;
 }
 
-.a-canvas{
+.info-panel{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
   background-color: black;
+}
+
+.project-title{
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+.student{
+  font-size: 16px;
+  color: white;
 }
 
 .a-loader-title{
