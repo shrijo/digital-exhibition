@@ -10,7 +10,7 @@ AFRAME.registerComponent('cursor-listener', {
       projectTitleElement.innerHTML = this.dataset.projectTitleString;
       studentElement.innerHTML = this.dataset.studentString;
       descriptionElement.innerHTML = this.dataset.descriptionString;
-      if(this.tagName == 'VIDEO') {
+      if(this.tagName == 'a-video') {
           alert("It's a video!");
       }
     });
