@@ -1,3 +1,3 @@
 function showDescription() {
-  alert("yo!")
+  document.querySelector(".description").classList.toggle("descriptionVisible");
 }
