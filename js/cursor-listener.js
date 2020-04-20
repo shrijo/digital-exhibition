@@ -15,7 +15,7 @@ AFRAME.registerComponent('cursor-listener', {
     });
 
     this.el.addEventListener('mouseleave', function (evt) {
-      infoWrapper.classList.remove("visible")
+      infoPanel.classList.remove("visible")
     });
   }
 });
