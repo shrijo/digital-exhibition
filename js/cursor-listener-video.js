@@ -16,7 +16,7 @@ AFRAME.registerComponent('cursor-listener-video', {
 
     this.el.addEventListener('mouseleave', function (evt) {
       infoPanel.classList.remove("visible");
-      this.stop();
+      this.pause();
     });
   }
 });
