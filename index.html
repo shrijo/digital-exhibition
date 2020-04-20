@@ -124,9 +124,10 @@ body {
   background-color: black;
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 0;
   position: fixed;
-  bottom: 20px;
+  bottom: 0;
+  height: 0;
   left: 20px;
   right: 20px;
   transition: 200ms ease;
@@ -135,7 +136,6 @@ body {
 }
 
 .info-panel{
-  height: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -159,7 +159,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 500ms ease;
+  transition: 1s ease;
 }
 
 .rot45{
@@ -175,7 +175,7 @@ body {
 .visible{
   padding: 10px 20px;
   bottom: 20px;
-  height: 41px;
+  height: auto;
 }
 
 .project-title{
@@ -196,12 +196,12 @@ body {
 .description{
   color: white;
   height: 0;
-  margin: 10px 0;
-  transition: 500ms ease;
+  transition: 1s ease;
 }
 
 .descriptionVisible{
-  height: 400px;
+  height: auto;
+  max-height: 400px;
   overflow-y: scroll;
 }
 
