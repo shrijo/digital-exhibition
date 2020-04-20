@@ -10,6 +10,9 @@ AFRAME.registerComponent('cursor-listener', {
       projectTitleElement.innerHTML = this.dataset.projectTitleString;
       studentElement.innerHTML = this.dataset.studentString;
       descriptionElement.innerHTML = this.dataset.descriptionString;
+      if(this.tagName == 'VIDEO') {
+          alert("It's a video!");
+      }
     });
 
     this.el.addEventListener('mouseleave', function (evt) {
