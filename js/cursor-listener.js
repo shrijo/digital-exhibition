@@ -8,8 +8,8 @@ AFRAME.registerComponent('cursor-listener', {
 
     this.el.addEventListener('mouseenter', function (evt) {
       infoPanel.classList.add("visible")
-      projectTitleElement.innerHTML = this.el.dataset.projectTitleString;
-      studentElement.innerHTML = this.el.dataset.studentString;
+      projectTitleElement.innerHTML = this.dataset.projectTitleString;
+      studentElement.innerHTML = this.dataset.studentString;
     });
 
     this.el.addEventListener('mouseleave', function (evt) {
