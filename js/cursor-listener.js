@@ -5,7 +5,7 @@ AFRAME.registerComponent('cursor-listener', {
     var student = document.querySelector(".student");
     var projectTitle = document.querySelector(".project-title");
 
-    this.el.addEventListener('mouseOver', function (evt) {
+    this.el.addEventListener('mouseenter', function (evt) {
       lastIndex = (lastIndex + 1) % COLORS.length;
       this.setAttribute('material', 'color', COLORS[lastIndex]);
       console.log('I was clicked at: ', evt.detail.intersection.point);
