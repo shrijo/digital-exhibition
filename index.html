@@ -81,9 +81,14 @@ body {
 .info-panel{
   z-index: 1000;
   position: fixed;
-  bottom: 20px;
+  bottom: -100%;
   left: 20px;
   background-color: black;
+  transition: 1s ease;
+}
+
+.visible{
+  bottom: 20px;
 }
 
 .project-title{
