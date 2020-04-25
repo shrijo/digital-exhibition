@@ -27,6 +27,7 @@ body {
 }
 
 .menu{
+  transform: rotate(-90deg);
   z-index: 4000;
   position: fixed;
   height: 0;
@@ -43,6 +44,7 @@ body {
 }
 
 .menu-visible{
+  transform: rotate(0deg);
   left: 0;
   top: 0;
   height: 100vh;
