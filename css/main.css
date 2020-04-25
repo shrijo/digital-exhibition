@@ -57,10 +57,16 @@ body {
 
 .loading-screen-next-button{
   display: none;
-  height: 30px;
+  height: 50px;
+  padding: 0 20px;
   border: 1px solid white;
   color: white;
   background-color: rgba(255, 255, 255, 0);
+  transition: 500ms ease;
+}
+
+.loading-screen-next-button:hover{
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .scene-is-loaded .loading-screen-next-button{
@@ -68,6 +74,7 @@ body {
 }
 
 .loading-spinner{
+  padding: 10px 0;
   display: flex;
   flex-direction: row;
 }
