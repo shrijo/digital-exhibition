@@ -1,4 +1,7 @@
-var scene = document.querySelector('a-scene');
+if (document.querySelector('a-scene').hasLoaded) {
+  alert("loaded");
+  sceneLoaded();
+}
 
 function sceneLoaded () {
   document.querySelector(".loading-screen-next").classList.add("scene-has-loaded");
@@ -13,7 +16,3 @@ function showDescription() {
 function hideLoadingScreen(){
   document.querySelector(".loading-screen").style.display = "none";
 }
-
-scene.addEventListener('loaded', function () {
-  alert("loadeddd");
-});
