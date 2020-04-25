@@ -16,6 +16,7 @@ body {
   position: fixed;
   right: 20px;
   top: 20px;
+  cursor: pointer;
 }
 
 .hamburgerline-top, .hamburgerline-center, .hamburgerline-bottom{
