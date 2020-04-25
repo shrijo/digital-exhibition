@@ -5,6 +5,7 @@ body {
 }
 
 .hamburger{
+  z-index: 5000;
   height: 50px;
   width: 50px;
   display: flex;
