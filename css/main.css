@@ -41,7 +41,6 @@ body {
 }
 
 .loading-screen-instructions div{
-  border: 1px solid white;
   margin: 15px;
   width:400px;
   height: 400px;
@@ -68,6 +67,7 @@ body {
 
 .loading-screen-next-button:hover{
   background-color: rgba(255, 255, 255, 1);
+  color: black;
 }
 
 .scene-is-loaded .loading-screen-next-button{
