@@ -8,5 +8,6 @@ function hideLoadingScreen(){
 }
 
 function showMenu() {
+  alert("Menu");
   document.querySelector(".menu").classList.toggle("menu-visible");
 }
