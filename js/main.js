@@ -18,3 +18,7 @@ function showDescription() {
 function hideLoadingScreen(){
   document.querySelector(".loading-screen").style.display = "none";
 }
+
+scene.addEventListener('loaded', function () {
+  alert("loadeddd");
+});
