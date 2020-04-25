@@ -262,7 +262,10 @@
       <div class="instruction-moving"> </div>
     </div>
     <div class="loading-screen-next">
-      <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+      <div class="loading-spinner">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        <p>Exhibition is loading</p>
+      </div>
       <button class="loading-screen-next-button" type="button" name="button" onclick="hideLoadingScreen()">Start</button>
     </div>
   </div>
@@ -321,6 +324,22 @@ body {
 
 .loading-screen-next{
   margin-bottom: 100px;
+}
+
+.loading-screen-next-button{
+  display: none;
+}
+
+.scene-is-loaded .loading-screen-next-button{
+  display: block;
+}
+
+.loading-spinner{
+  display: block;
+}
+
+.scene-is-loaded .loading-spinner{
+  display: none;
 }
 
 .info-wrapper{
