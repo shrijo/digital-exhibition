@@ -1,10 +1,5 @@
 var scene = document.querySelector('a-scene');
 
-if (scene.hasLoaded) {
-  alert("loaded");
-  sceneLoaded();
-}
-
 function sceneLoaded () {
   document.querySelector(".loading-screen-next").classList.add("scene-has-loaded");
 }
