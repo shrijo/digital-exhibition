@@ -24,6 +24,40 @@ body {
   margin: 2px 0;
 }
 
+.menu{
+  position: fixed;
+  height: 0;
+  width: 0;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  top: 50vh;
+  left: 50vw;
+  transition: 500ms ease;
+}
+
+.menu-visible{
+  display: visible;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width:: 100vw;
+}
+
+.menu a{
+  font-size: 48px;
+  color: black;
+  text-decoration: none;
+  transition: 5ms ease;
+}
+
+.menu a:hover{
+  color: white;
+}
+
 .loading-screen{
   position: fixed;
   top: 0;

@@ -6,3 +6,7 @@ function showDescription() {
 function hideLoadingScreen(){
   document.querySelector(".loading-screen").style.display = "none";
 }
+
+function showMenu() {
+  document.querySelector(".menu").classList.toggle("menu-visible");
+}
