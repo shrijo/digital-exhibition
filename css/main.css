@@ -43,7 +43,6 @@ body {
 }
 
 .menu-visible{
-  display: visible;
   left: 0;
   top: 0;
   height: 100vh;
