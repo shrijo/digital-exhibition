@@ -27,7 +27,7 @@ body {
 }
 
 .menu{
-  transform: rotate(-90deg);
+  transform: rotate(-450deg);
   z-index: 4000;
   position: fixed;
   height: 0;
