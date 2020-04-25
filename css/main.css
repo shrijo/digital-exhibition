@@ -27,7 +27,7 @@ body {
 }
 
 .menu{
-  z-index: 100000;
+  z-index: 4000;
   position: absolute;
   height: 0;
   width: 0;
