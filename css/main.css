@@ -49,11 +49,12 @@ body {
   width: 100vw;
 }
 
-.menu a{
+.menu a, .menu p{
   font-size: 48px;
   color: white;
   text-decoration: none;
   transition: 5ms ease;
+  cursor: pointer;
 }
 
 .menu a:hover{
