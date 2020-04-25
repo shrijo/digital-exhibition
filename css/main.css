@@ -28,7 +28,7 @@ body {
 
 .menu{
   z-index: 4000;
-  position: absolute;
+  position: fixed;
   height: 0;
   width: 0;
   background-color: yellow;
