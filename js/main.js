@@ -1,6 +1,7 @@
 var scene = document.querySelector('a-scene');
 
 if (scene.hasLoaded) {
+  alert("loaded");
   sceneLoaded();
 }
 
