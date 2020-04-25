@@ -27,12 +27,11 @@ body {
 }
 
 .menu{
-  transform: rotate(-450deg);
   z-index: 4000;
   position: fixed;
   height: 0;
   width: 0;
-  background-color: yellow;
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +43,6 @@ body {
 }
 
 .menu-visible{
-  transform: rotate(0deg);
   left: 0;
   top: 0;
   height: 100vh;
@@ -53,13 +51,13 @@ body {
 
 .menu a{
   font-size: 48px;
-  color: black;
+  color: white;
   text-decoration: none;
   transition: 5ms ease;
 }
 
 .menu a:hover{
-  color: blue;
+  color: yellow;
 }
 
 .loading-screen{
