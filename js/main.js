@@ -10,3 +10,7 @@ function hideLoadingScreen(){
 function showMenu() {
   document.querySelector(".menu").classList.toggle("menu-visible");
 }
+
+function enterVRMode(){
+  document.querySelector('a-scene').enterVR();
+}
