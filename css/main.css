@@ -292,4 +292,7 @@ body {
   .loading-screen-instructions{
     flex-direction: column;
   }
+  .loading-screen-instructions div{
+    height: auto;
+  }
 }
