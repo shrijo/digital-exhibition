@@ -98,7 +98,7 @@ body {
 }
 
 .loading-screen-instructions div{
-  margin: 15px;
+  margin: 30px;
   width: auto;
   height: 250px;
   display: flex;
