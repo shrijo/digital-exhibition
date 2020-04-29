@@ -50,10 +50,15 @@ body {
 }
 
 .menu a, .menu p{
+  font-size: 0;
+  color: transparent;
+  text-decoration: none;
+  transition: 500ms ease;
+}
+
+.menu-visible .menu a, .menu-visible .menu p{
   font-size: 48px;
   color: white;
-  text-decoration: none;
-  transition: 5ms ease;
   cursor: pointer;
 }
 
