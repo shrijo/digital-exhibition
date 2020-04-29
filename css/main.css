@@ -51,7 +51,7 @@ body {
 
 .menu a, .menu p{
   font-size: 0;
-  color: transparent;
+  color: white;
   text-decoration: none;
   transition: 500ms ease;
 }
