@@ -22,7 +22,7 @@ body {
 .hamburgerline-top, .hamburgerline-center, .hamburgerline-bottom{
   width: 30px;
   height: 2px;
-  background-color: black;
+  background-color: white;
   margin: 2px 0;
 }
 
