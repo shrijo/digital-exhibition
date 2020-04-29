@@ -50,7 +50,7 @@ body {
 }
 
 .menu a, .menu p{
-  font-size: 0px;
+  font-size: 1px;
   color: white;
   text-decoration: none;
   transition: 500ms ease;
