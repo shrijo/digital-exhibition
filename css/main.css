@@ -22,7 +22,7 @@ body {
 .hamburgerline-top, .hamburgerline-center, .hamburgerline-bottom{
   width: 30px;
   height: 2px;
-  background-color: white;
+  background-color: black;
   margin: 2px 0;
 }
 
@@ -31,7 +31,6 @@ body {
   position: fixed;
   height: 0;
   width: 0;
-  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
