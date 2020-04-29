@@ -27,6 +27,7 @@ body {
 }
 
 .menu{
+  border-radius: 100%;
   z-index: 4000;
   position: fixed;
   height: 0;
@@ -43,6 +44,7 @@ body {
 }
 
 .menu-visible{
+  border-radius: 0;
   left: 0;
   top: 0;
   height: 100vh;
@@ -50,10 +52,10 @@ body {
 }
 
 .menu a, .menu p{
-  font-size: 12px;
+  font-size: 0px;
   color: white;
   text-decoration: none;
-  transition: 500ms ease;
+  transition: 800ms ease;
 }
 
 .menu-visible a, .menu-visible p{
