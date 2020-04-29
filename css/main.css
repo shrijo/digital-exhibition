@@ -31,8 +31,8 @@ body {
   position: fixed;
   height: 0;
   width: 0;
+  background-color: rgba(0 0 0 0);
   display: flex;
-  background: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
