@@ -56,7 +56,7 @@ body {
   transition: 500ms ease;
 }
 
-.menu-visible .menu a, .menu-visible .menu p{
+.menu-visible a, .menu-visible p{
   font-size: 48px;
   color: white;
   cursor: pointer;
