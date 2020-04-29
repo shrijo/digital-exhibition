@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <a-scene vr-mode-ui="enabled: false" loading-screen="dotsColor: white; backgroundColor: black" loading-listener renderer="antialias: true;">
+    <a-scene vr-mode-ui="enabled: false" loading-screen="dotsColor: white; backgroundColor: black" loading-listener>
       <a-assets>
         <img id="concrete_color" src="textures/concrete/Concrete_COLOR.jpg">
         <img id="concrete_norm" src="textures/concrete/Concrete_NORM.jpg">
@@ -41,7 +41,7 @@
 
         <video id="lachs" autoplay muted loop="true" src="projects/lachs/lachs.mp4"></video>
         -->
-        <video id="chicken" src="projects/chicken/chicken.mp4" autoplay playsinline muted loop></video>
+        <video id="chicken" src="projects/chicken/chicken.mp4" autoplay webkit-playsinline playsinline muted loop></video>
 
 
       </a-assets>
