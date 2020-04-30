@@ -35,6 +35,11 @@
 
         <a-asset-item id="dodge-glb" src="projects/models/dodge/dodge.glb"></a-asset-item>
 
+        <a-asset-item id="jess-obj" src="projects/models/jess/jess.obj"></a-asset-item>
+        <img id="jess_color" src="projects/models/jess/Jess_D.png">
+        <img id="jess_norm" src="projects/models/jess/Jess_N.jpg">
+        <img id="jess_occ" src="projects/models/jess/Wall_OCC.jpg">
+
         <!--
         <a-asset-item id="rose-obj" src="projects/models/rose/rose.obj"></a-asset-item>
         <a-asset-item id="rose-mtl" src="projects/models/rose/rose.mtl"></a-asset-item>
@@ -227,7 +232,7 @@
       <a-plane position="0 0 0" height="20" width="20" rotation="-90 0 0" shadow="receive: true" material="color: #dedede"></a-plane>
       <a-plane color="#ffffff" position="0 8 0" height="20" width="20" rotation="90 0 0" material="color: #efefef" shadow="receive: true"></a-plane>
 
-      <a-entity gltf-model="#dodge-glb" scale="0.3 0.3 0.3" position="0 0.431 0" rotation="0 -45 0" material="shader:flat; color:white"></a-entity>
+      <a-entity obj-model="#jess-glb" position="0 0 0" rotation="0 -45 0" material="normalMap: #jess_norm; ambientOcclusionMap: #jess_occ; colorTexture: #jess_color"></a-entity>
 
       </a-entity>
 
