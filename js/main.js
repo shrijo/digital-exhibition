@@ -3,8 +3,6 @@ document.addEventListener('mozfullscreenchange', exitVRMode, false);
 document.addEventListener('MSFullscreenChange', exitVRMode, false);
 document.addEventListener('webkitfullscreenchange', exitVRMode, false);
 
-var tagsToHide = document.getElementsByClassName("tag");
-
 function showDescription() {
   document.querySelector(".description").classList.toggle("descriptionVisible");
   document.querySelector(".barvertical").classList.toggle("rot45");
@@ -21,16 +19,20 @@ function showMenu() {
 function enterVRMode(){
   document.querySelector("a-scene").enterVR();
 
+  var tagsToHide = document.getElementsByClassName("tag");
+
+  console.log("enter")
   for(var i = 0; i < tagsToHide.length; i++){
       tagsToHide[i].setAttribute("visible",true);
   }
 }
 
-function exitVRMode()
-{
-  console.log("change")
+function exitVRMode(){
+  var tagsToHide = document.getElementsByClassName("tag");
+
  if (document.webkitIsFullScreen || document.mozFullScreen || document.msFullscreenElement !== null)
- {
+  {
+    console.log("exit")
    for(var i = 0; i < tagsToHide.length; i++){
        tagsToHide[i].setAttribute("visible",false);
    }
