@@ -3,8 +3,7 @@ AFRAME.registerComponent('scene-listener',{
 
      var tagsToHide = document.getElementsByClassName("tag");
 
-      this.el.addEventListener('exit-vr',function (evt) {
-        alert("yo");
+      this.el.sceneEl.addEventListener('exit-vr',function (evt) {
              for(var i = 0; i < tagsToHide.length; i++){
                  tagsToHide[i].setAttribute("visible",false);
              }
