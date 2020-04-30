@@ -7,10 +7,11 @@ var tagsToHide = document.getElementsByClassName("tag");
 
 function exitHandler()
 {
+  console.log("change")
  if (document.webkitIsFullScreen || document.mozFullScreen || document.msFullscreenElement !== null)
  {
   tagsToHide[i].setAttribute("visible",false);
-  alert("xo!")
+
  }
 }
 
