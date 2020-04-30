@@ -21,6 +21,7 @@ function showMenu() {
 
 function enterVRMode(){
   document.querySelector("a-scene").enterVR();
+  document.querySelector(".menu").classList.toggle("menu-visible");
 }
 
 function exitVRMode(){
