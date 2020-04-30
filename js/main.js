@@ -23,13 +23,13 @@ function enterVRMode(){
 function exitVRMode(){
   var tagsToHide = document.getElementsByClassName("tag");
 
- if (document.webkitIsFullScreen || document.mozFullScreen || document.msFullscreenElement !== null)
+ if (document.exitFullscreen)
   {
     console.log("exit")
    for(var i = 0; i < tagsToHide.length; i++){
        tagsToHide[i].setAttribute("visible",false);
    }
- }
+ };
  else{
    for(var i = 0; i < tagsToHide.length; i++){
      console.log("enter")
