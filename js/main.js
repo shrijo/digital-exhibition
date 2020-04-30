@@ -18,13 +18,6 @@ function showMenu() {
 
 function enterVRMode(){
   document.querySelector("a-scene").enterVR();
-
-  var tagsToHide = document.getElementsByClassName("tag");
-
-  console.log("enter")
-  for(var i = 0; i < tagsToHide.length; i++){
-      tagsToHide[i].setAttribute("visible",true);
-  }
 }
 
 function exitVRMode(){
@@ -36,6 +29,12 @@ function exitVRMode(){
    for(var i = 0; i < tagsToHide.length; i++){
        tagsToHide[i].setAttribute("visible",false);
    }
+ }
+ else{
+   for(var i = 0; i < tagsToHide.length; i++){
+     console.log("enter")
 
+       tagsToHide[i].setAttribute("visible",true);
+   }
  }
 }
