@@ -13,5 +13,5 @@ function showMenu() {
 
 function enterVRMode(){
   document.querySelector("a-scene").enterVR();
-  document.querySelector(".tag").setAttribute("visible", false);
+  document.querySelector(".tag").setAttribute("visible", true);
 }
