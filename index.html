@@ -52,6 +52,8 @@
         <a-entity laser-controls="hand: right" defaultModelColor="white"></a-entity>
       </a-entity>
 
+
+      <a-entity class="room">
       <a-entity light="type: point; castShadow:false; color: #FFF; intensity: 0.2" position="5 2 5"></a-entity>
       <a-entity light="type: point; castShadow:false; color: #FFF; intensity: 0.2" position="5 2 -5"></a-entity>
       <a-entity light="type: point; castShadow:false; color: #FFF; intensity: 0.2" position="-5 2 -5"></a-entity>
@@ -62,7 +64,6 @@
       <a-box position="0 4 -10" scale="20 8 0.4" rotation="0 0 0" color="#efefef"></a-box>
       <a-box position="10 4 0" scale="20 8 0.4" rotation="0 90 0" color="#efefef"></a-box>
       <a-box position="0 4 10" scale="20 8 0.4" rotation="0 0 0" color="#efefef"></a-box>
-      <a-plane position="-20 0 -10" height="20" width="20" rotation="-90 0 0" material="color: #fefefe; repeat: 80 80; normalMap: #concrete_norm; normalTextureRepeat: 80 80; ambientOcclusionMap: #concrete_occ; ambientOcclusionTextureRepeat: 80 80"></a-plane>
       <a-plane position="0 0 0" height="20" width="20" rotation="-90 0 0" material="color: #fefefe; repeat: 80 80; normalMap: #concrete_norm; normalTextureRepeat: 80 80; ambientOcclusionMap: #concrete_occ; ambientOcclusionTextureRepeat: 80 80"></a-plane>
       <a-plane color="#ffffff" position="0 8 0" height="20" width="20" rotation="90 0 0" material="color: #efefef"></a-plane>
 
@@ -209,7 +210,166 @@
         >
         <a-box class="tag" visible="false" position="0 -2.5 4" scale="0.9 0.02 0.4" material="color: #3d3d3d" rotation="45 0 0"></a-box>
       </a-image>
+      </a-entity>
 
+      <a-entity class="room" position="-20 0 -10">
+      <a-entity light="type: point; castShadow:false; color: #FFF; intensity: 0.2" position="5 2 5"></a-entity>
+      <a-entity light="type: point; castShadow:false; color: #FFF; intensity: 0.2" position="5 2 -5"></a-entity>
+      <a-entity light="type: point; castShadow:false; color: #FFF; intensity: 0.2" position="-5 2 -5"></a-entity>
+      <a-entity light="type: point; castShadow:false; color: #FFF; intensity: 0.2" position="-5 2 5"></a-entity>
+      <a-entity light="type: ambient; color: #FFF; intensity: 0.5"></a-entity>
+
+      <a-box position="-10 4 2" scale="16 8 0.4" rotation="0 90 0" color="#efefef"></a-box>
+      <a-box position="0 4 -10" scale="20 8 0.4" rotation="0 0 0" color="#efefef"></a-box>
+      <a-box position="10 4 0" scale="20 8 0.4" rotation="0 90 0" color="#efefef"></a-box>
+      <a-box position="0 4 10" scale="20 8 0.4" rotation="0 0 0" color="#efefef"></a-box>
+      <a-plane position="0 0 0" height="20" width="20" rotation="-90 0 0" material="color: #fefefe; repeat: 80 80; normalMap: #concrete_norm; normalTextureRepeat: 80 80; ambientOcclusionMap: #concrete_occ; ambientOcclusionTextureRepeat: 80 80"></a-plane>
+      <a-plane color="#ffffff" position="0 8 0" height="20" width="20" rotation="90 0 0" material="color: #efefef"></a-plane>
+
+      <a-image
+        src="#holzfasern"
+        height="9.05"
+        width="6.40"
+        position="0 4 -9.75"
+        cursor-listener
+        data-student-string="Joshua Binswanger"
+        data-project-title-string="Holzfasern und Jahresringe"
+        data-description-string="
+        Die Struktur von Holz<br>
+        <br>
+        Holz ist einer der ältesten und wichtigsten von Menschen genutzten Rohstoffe. Stabilität, Leichtigkeit und Beständigkeit machen es zu einem Wundermaterial. Die vorliegende Arbeit untersucht die Struktur, welche diese Eigenschaften ermöglicht.<br>
+        Seit Jahrtausenden nutzen wir Holz als Werkstoff; seit Jahrhunderten ergründet die Wissenschaft die Geheimnisse hinter dem faszinierenden Naturprodukt, das aus vielen Bereichen unseres Lebens nicht mehr wegzudenken ist. Als eine der wenigen erneuerbaren Ressourcen wird es auch in Zukunft nicht an Bedeutung verlieren.<br>
+        <br>
+        Die Wood Materials Science Group der ETH Zürich erforscht die chemischen und physikalischen Eigenschaften von Holz, um neue und ungeahnte Möglichkeiten seiner Verwendung zu finden. Eine Visualisierung, die sich aus verschiedenen Perspektiven mit dem grundlegenden strukturellen Aufbau von Holz auseinandersetzt, ist für die Mitglieder der Forschungsgruppe insbesondere in der Lehre oder bei Präsentationen vor einem breiteren Publikum wichtig.<br>
+        <br>
+        Da viele der verwendeten Illustrationen dem heutigen Stand der Forschung nicht mehr entsprechen, habe ich im Dialog mit dem Kooperationspartner eine Reihe von 3D-Modellen erarbeitet, welche die komplexe Struktur von Holz in verschiedenen Grössenordnungen zeigen. Aufbauend auf diesen Modellen sind Visualisierungen und 3D-Drucke entstanden, welche Laien wie Experten die komplexe Schönheit des Holzes näher bringen.<br>
+        <br>
+        Im Verlauf der Arbeit ergaben sich manche Fragen, auf die die Forschung keine eindeutigen Antworten geben kann. Die vorliegenden Modelle bilden eine Darstellung des gegenwärtigen Forschungsstandes und bilden eine Grundlage für die weitere Diskussion.<br>
+        <br>
+        Joshua Binswanger<br>
+        BA-Diplome 2019<br>
+        <br>
+        Gestalterisches Mentorat<br>
+        Alessandro Holler<br>
+        Jonas Lauströer<br>
+        <br>
+        Kooperationspartner/innen<br>
+        Dr. Maria Adobes Vidal<br>
+        Marion Frey<br>
+        Dr. Tobias Keplinger<br>
+        <br>
+        "
+        data-link-string="https://kvis.zhdk.ch/projekte/holzfasern-und-jahresringe/"
+      >
+        <a-box class="tag" visible="false" position="0 -2.5 4" scale="0.9 0.02 0.4" material="color: #3d3d3d" rotation="45 0 0"></a-box>
+      </a-image>
+
+      <a-image
+        src="#atta"
+        height="8.85"
+        width="6.4"
+        position="0 4 9.75 "
+        rotation="0 180 0"
+        cursor-listener
+        data-student-string="Seraina Hügli"
+        data-project-title-string="Aït Atta"
+        data-description-string="
+        Ein Ausstellungskonzept zur Darstellung der Mobilität marokkanischer Nomaden<br>
+        <br>
+        Nomaden sind in Bewegung. Wie kann diese mobile Lebensweise in einem Ausstellungsraum sichtbar gemacht werden? Ziel der vorliegenden Bachelorarbeit war es, am Beispiel einer nomadischen Familie ein Ausstellungskonzept zu entwicklen, das deren zyklischen Bewegungen auf unterschiedliche Arten visuell vermittelt.<br>
+        <br>
+        Bei der Konzeption eines Ausstellungsraumes faszinierte mich das Entwerfen einer Vielfalt an Visualisierungen. Herauszufinden, welche Bilder die Lebensweise der marokkanischen Nomaden vermitteln und wie die Visualisierungen im Bezug zum Ausstellungsraum stehen, gab der Arbeit eine für mich reizende Komplexität.<br>
+        <br>
+        Den Inhalt für die Ausstellung bildet das ethnoarchäologische Forschungsprojekt von Dr. Thomas Reitmaier. Seit 2017 dokumentiert er die nomadische Lebensweise einer Familie hinsichtlich ihrer Mobilität.
+        <br>
+        Die aus dem Forschungsprojekt in Marokko resultierenden Daten waren die Inspirationsquelle für den Entwurfsprozess. Durch stetige Reflexion und Gespräche mit Experten kristallisierte sich aus dem breitgefächerten Entwurf ein Ausstellungskonzept. In einer letzten Phase ermöglichte das Entwickeln von Prototypen die Klärung der relevanten gestalterischen Fragen.<br>
+        <br>
+        Die Mobilität der erforschten Familie ist durch den halbjährlichen Weidewechsel geprägt – eine Wanderung von 150 km zwischen dem hohen Atlas und dem südlichen Jbel Sarhro. Das Ausstellungskonzept rückt diese Wanderung anhand zweier raumbildender Installationen ins Zentrum.<br>
+        <br>
+        Die Bewegung der Wanderung wird durch ein 8 Meter langes Höhenprofil (Massstab 1:16’000) veranschaulicht. Die Installation ist eine Miniatur der geografischen Wanderung der Nomaden und zugleich eine Projektionsfläche für eine Animation. Dauer, Distanz und Höhendifferenzen, Pässe und Übernachtungen können auf ihr angezeigt werden. Der Installation gegenüberliegend stehen drei hohe Wandbilder – sie stellen Weideplätze und Wanderung dar. Säulenartig bilden sie gestalterische und inhaltliche Eckpfeiler der Ausstellung.<br>
+        <br>
+        <br>
+        <br>
+        Seraina Hügli<br>
+        BA-Diplome 2018<br>
+        <br>
+        Gestalterisches Mentorat<br>
+        Jonas Lauströer<br>
+        <br>
+        Kooperationspartner<br>
+        Dr. Thomas Reitmaier und Sarah Leib, Historisches und Völkerkundemuseum St. Gallen<br>
+        <br>
+        "
+        data-link-string="https://kvis.zhdk.ch/projekte/seraina-huegli/"
+        >
+        <a-box class="tag" visible="false" position="0 -2.5 4" scale="0.9 0.02 0.4" material="color: #3d3d3d" rotation="45 0 0"></a-box>
+      </a-image>
+
+      <a-image
+        src="#altersgeheimnisse"
+        height="4.52"
+        width="6.4"
+        position="9.75 4 0"
+        rotation="0 -90 0"
+        cursor-listener
+        data-student-string="Michelle Hartmann"
+        data-project-title-string="Altersgeheimnisse"
+        data-description-string="
+        Gezeichnete Reportage aus dem Alterszentrum<br>
+        <br>
+        Wir können das Älterwerden nicht aufhalten, auch wenn wir damit hadern. Insbesondere die Vorstellung vom Leben in einem Altersheim macht uns Angst. Aber wie ist es wirklich, in einem Altersheim zu leben? Die vorliegende Arbeit bietet Einblicke in das Leben im Alterszentrum.<br>
+        Ich habe noch nie einen Fuss in ein Alterszentrum hineingesetzt und hatte doch schon ein negatives Bild von Alterszentren. Von meiner Unwissenheit geleitet, wollte ich erfahren, wie das Leben dort wirklich ist. Während zwei Monaten habe ich mich als Zeichnerin durch das Alterszentrum bewegt, die Orte des Geschehens besucht und das Erlebte als gezeichnete Reportage dokumentiert.<br>
+        <br>
+        Entstanden sind zwei Arten von Bildern. Schnelle Skizzen mit Tusche und Filzstift illustrieren die Interaktionen zwischen den Bewohnern. Dazu gehören Textfragmente von Aussagen der Bewohner sowie von Gesprächen mit Fachpersonen aus dem Alterszentrum. Da ich direkt vor Ort arbeitete und mir eine gewisse zeitliche und räumliche Flexibilität bewahren konnte, ergab sich diese Art von Bildsprache von selbst. Diese Skizzen sind in Heftform gesammelt. Die ausgearbeiteten farbigen Bilder<br> widerspiegeln hingegen die Atmosphäre im Alterszentrum in verdichteter Form.<br>
+        <br>
+        Meine Zeit im Alterszentrum hat mir gezeigt, wie vielfältig die Thematik des Älterwerdens und der Umgang mit alten Menschen ist. Die Arbeit bildet eine erste Annäherung und bietet sich für eine intensivere Auseinandersetzung mit den verschiedenen Teilbereichen des Älterwerdens an– einem Thema, das niemals alt wird.<br>
+        <br>
+        Michelle Hartmann<br>
+        BA-Diplome 2019<br>
+        <br>
+        Gestalterisches Mentorat<br>
+        Christoph Fischer<br>
+        <br>
+        Kooperationspartner<br>
+        Wägelwiesen Alters- und Pflegezentrum AG, Wallisellen<br>
+        <br>
+        "
+        data-link-string="https://kvis.zhdk.ch/projekte/chanis-gaxe/"
+        >
+        <a-box class="tag" visible="false" position="0 -2.5 4" scale="0.9 0.02 0.4" material="color: #3d3d3d" rotation="45 0 0"></a-box>
+      </a-image>
+
+      <a-image
+        src="#mumie"
+        height="4.52"
+        width="6.4"
+        position="-9.75 4 0"
+        rotation="0 90 0"
+        cursor-listener
+        data-student-string="Selina Bächli"
+        data-project-title-string="Die Mumie der Tabaketnetmut"
+        data-description-string="
+        Virtuelle Rekonstruktion einer altägyptischen Bestattung<br>
+        <br>
+        Auf der Virtual-Reality-Tour begehen Besucher im heutigen Ägypten eine Grabkapelle und reisen 3000 Jahre zurück ins Alte Ägypten, direkt zur Mumie Tabaketnetmuts. Das Erlebnis zeigt die einzelnen Schritte der Mumifizierung mit Prothese, Papyrusamulett und Bandagen und lässt die Geschichte der Priestertochter lebendig werden.<br>
+        <br>
+        In den 90er-Jahren hat der Fund der Mumie Tabaketnetmuts, die um ca. 900 v. Chr. in der Nekropole von Theben-West in der Nähe von Luxor begraben wurde, viele Fragen aufgeworfen. Vermutlich wegen einer Erkrankung an Arteriosklerose trug die Frau eine Zehenprothese - eine der ältesten Prothesen der Geschichte. Ein Schweizer Forscherteam untersucht derzeit erneut die wenigen erhaltenen Überreste von Grabbeigaben, um weitere Einblicke in die Lebens- und Leidensgeschichte der Priestertochter zu erhalten. In Zusammenarbeit mit dem Departement Altertumswissenschaften der Universität Basel, dem Institut für Evolutionäre Medizin der Universität Zürich und dem Institut für Geodäsie und Photogrammetrie der ETH entstand eine 3D-Rekonstruktion der Bestattung von Tabaketnetmut. Die Besucher können die Grabkapelle, die in der Realität nicht öffentlich zugänglich ist virtuell begehen. Die Kombination von Archäologie und Virtual Reality ermöglicht eine Zeitreise in die Vergangenheit; sie rekonstruiert und erklärt auf wissenschaftlicher Basis auch jene Bestattungselemente, die Grabräubern teilweise oder ganz zum Opfer gefallen sind. Archäologie und ägyptische Kulturgeschichte werden so einem breiteren Publikum auf eine neue, eindrückliche Art nähergebracht.<br>
+        <br>
+        Durch das Projekt ‚Life Histories of Theban Tombs‘ der Universität Basel unter der Leitung von Susanne Bickel, Frank Rühli und Andrea Loprieno-Gnirs ermöglicht die Autorin die Gelegenheit, auf einer Expedition nach Luxor die Grabkapelle und die wenigen Grabbeigaben in Realität zu erleben. In enger Zusammenarbeit mit den Wissenschaftlern entstanden digitale 3D-Entwürfe der unterschiedlichen Stadien der Mumifizierung in Cinema 4D, basierend auf Annahmen und Vergleichen mit anderen Bestattungen derselben Zeitperiode. Unter anderem wurden 3D-Modelle von der Prothese und der Grabkapelle verwendet, die im Rahmen des Projekts am Institut für Geodäsie und Photogrammetrie der ETH generiert wurden. In der Game Engine Unity wurden mehrere Szenen realisiert, durch die der Benutzer von einer Sprecherstimme geführt wird. Oliver Sahli vom Studiengang Game Design unterstützte das Projekt mit der Programmierung der Virtual Tour.<br>
+        <br>
+        Die gezeigten 3D-Objekte befinden sich noch in einem Entwurfsstadium, da die archäologischen Untersuchungen noch nicht abgeschlossen sind. Das Projekt wird in diesem Format einzig an der Diplomausstellung gezeigt. Nach weiteren Überarbeitungen an den Universitäten von Basel und Zürich sollen jedoch Visualisierungen und Filmausschnitte der Virtual Tour auch einer breiteren Öffentlichkeit zugänglich gemacht werden.<br>
+        <br>
+        Selina Bächli<br>
+        BA-Diplome 2017<br>
+        Kooperationspartner: Andrea Loprieno-Gnirs, Universität Basel, Departement Altertumswissenschaften, Frank Rühli, Universität Zürich, Institut für Evolutionäre Medizin<br>
+        <br>
+        Gestalterisches Mentorat: Jonas Christen und Reto Spoerri<br>
+        "
+        data-link-string="https://kvis.zhdk.ch/projekte/selina-baechli/"
+        >
+        <a-box class="tag" visible="false" position="0 -2.5 4" scale="0.9 0.02 0.4" material="color: #3d3d3d" rotation="45 0 0"></a-box>
+      </a-image>
+      </a-entity>
 
 <!--
       <a-video
