@@ -22,6 +22,11 @@ function showMenu() {
 function enterVRMode(){
   document.querySelector("a-scene").enterVR();
   document.querySelector(".menu").classList.toggle("menu-visible");
+
+  for(var i = 0; i < tagsToHide.length; i++){
+    tagsToHide[i].setAttribute("visible",true);
+  }
+  fs = true;
 }
 
 function exitVRMode(){
@@ -34,12 +39,5 @@ function exitVRMode(){
       tagsToHide[i].setAttribute("visible",false);
     }
     fs = false;
-  }
-  else{
-    console.log("enter")
-    for(var i = 0; i < tagsToHide.length; i++){
-      tagsToHide[i].setAttribute("visible",true);
-    }
-    fs = true;
   }
 }
