@@ -1,7 +1,7 @@
-document.addEventListener('fullscreenchange', exitVRMode, false);
-document.addEventListener('mozfullscreenchange', exitVRMode, false);
-document.addEventListener('MSFullscreenChange', exitVRMode, false);
-document.addEventListener('webkitfullscreenchange', exitVRMode, false);
+document.addEventListener('fullscreenchange', exitVRMode);
+document.addEventListener('mozfullscreenchange', exitVRMode);
+document.addEventListener('MSFullscreenChange', exitVRMode);
+document.addEventListener('webkitfullscreenchange', exitVRMode);
 
 function showDescription() {
   document.querySelector(".description").classList.toggle("descriptionVisible");
