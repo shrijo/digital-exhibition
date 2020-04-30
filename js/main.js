@@ -13,4 +13,10 @@ function showMenu() {
 
 function enterVRMode(){
   document.querySelector("a-scene").enterVR();
+
+  var tagsToHide = document.getElementsByClassName("tag");
+
+  for(var i = 0; i < tagsToHide.length; i++){
+      tagsToHide[i].setAttribute("visible",true);
+  }
 }
