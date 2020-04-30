@@ -10,6 +10,7 @@ function exitHandler()
  if (document.webkitIsFullScreen || document.mozFullScreen || document.msFullscreenElement !== null)
  {
   tagsToHide[i].setAttribute("visible",false);
+  alert("xo!")
  }
 }
 
