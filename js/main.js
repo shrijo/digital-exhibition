@@ -31,7 +31,9 @@ function exitVRMode()
   console.log("change")
  if (document.webkitIsFullScreen || document.mozFullScreen || document.msFullscreenElement !== null)
  {
-  tagsToHide[i].setAttribute("visible",false);
+   for(var i = 0; i < tagsToHide.length; i++){
+       tagsToHide[i].setAttribute("visible",false);
+   }
 
  }
 }
