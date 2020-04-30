@@ -33,7 +33,8 @@
         <img id="altersgeheimnisse" src="projects/altersgeheimnisse/hero.jpg">
         <img id="mumie" src="projects/mumie/hero.jpg">
 
-        <a-asset-item id="dodge-glb" src="projects/models/dodge/dodge.glb"></a-asset-item>
+        <a-asset-item id="toilet-obj" src="projects/models/toilet/toilet.obj"></a-asset-item>
+        <a-asset-item id="toilet-mtl" src="projects/models/toilet/toilet.mtl"></a-asset-item>
 
         <a-asset-item id="jess-obj" src="projects/models/jess/jess.obj"></a-asset-item>
         <img id="jess_color" src="projects/models/jess/Jess_D.png">
@@ -232,7 +233,10 @@
       <a-plane position="0 0 0" height="20" width="20" rotation="-90 0 0" shadow="receive: true" material="color: #dedede"></a-plane>
       <a-plane color="#ffffff" position="0 8 0" height="20" width="20" rotation="90 0 0" material="color: #efefef" shadow="receive: true"></a-plane>
 
-      <a-obj-model src="#jess-obj" position="0 0 0" rotation="-90 0 0" scale="0.0015 0.0015 0.0015" shadow="cast:true" material="src:#jess_color; normalMap:#jess_norm"></a-obj-model>
+      <a-obj-model src="#jess-obj" position="0 0 0" rotation="-90 0 0" scale="0.0015 0.0015 0.0015" shadow="cast:true" material="src:#jess_color; normalTexture:#jess_norm"></a-obj-model>
+
+      <a-obj-model src="#toilet-obj" position="10 0 4" rotation="-90 0 0" scale="1 1 1" shadow="cast:true" material="src:#toilet_mtl"></a-obj-model>
+
 
       </a-entity>
 
